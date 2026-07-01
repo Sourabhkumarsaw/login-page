@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="main">
+          <h2>Welcome, User!</h2>
+        <h2>Registration Form</h2>
+       
+        <form action="">
+            <label for="first"> Name:</label>
+            <input type="text" id="first" name="first" placeholder="Name"  autocomplete="on" required />
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="username" autocomplete="on" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="on" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" autocomplete="on" required />
+
+            <label for="repassword">Re-type Password:</label>
+            <input type="password" id="repassword" name="repassword" placeholder="repassword" autocomplete="on" required />
+
+            <label for="mobile">Number:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="+91 xxxxxxxxxx" autocomplete="on" required />
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+            <button type="submit" id="registerButton" for="registerButton"  >
+                Register
+            </button>
+        </form>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>>
