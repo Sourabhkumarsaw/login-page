@@ -13,7 +13,7 @@ body {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-   input {
+   input, button {
     width: 100%;
     display: block;
     box-sizing: border-box;
@@ -39,7 +39,7 @@ body {
   transition: all .2s ease-in-out;
 } 
 
-.login input[type=submit] {
+button[type="login"] {
   border: none;
   background: #EF5350;
   color: white;
@@ -48,7 +48,7 @@ body {
   margin: 20px 0px;
 }
 
-.login input[type=submit]:hover {
+button[type="login"]:hover {
   background:yellowgreen;  
 }
 
