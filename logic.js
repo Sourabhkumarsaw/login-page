@@ -2,24 +2,27 @@ document.addEventListener("DOMContentLoaded", function() {
  const usernameinput = document.getElementById('username');
  const emailinput = document.getElementById('email');
  const passwordinput = document.getElementById('password');
- const confirmPassword = document.getElementById('confirmPassword');
+ const confirmPassword = document.getElementById('repassword');
  const registerButton = document.getElementById('registerButton');
- const mobile = document.getElementById('mobile');
+ const mobile = document.getElementById('Number');
+      
+ 
+ registerButton.addEventListener("click", function (e) {
+    e.preventDefault();
 
- registerButton.addEventListener('click', function(){
-    const username = usernameinput.value;
-    const email =  emailinput.value;
+    if (!emailinput.checkValidity()) {
+        alert("Please enter a valid email.");
+        return;
+    }
+
+    const username = usernameinput.value.trim();
+    const email = emailinput.value.trim();
     const password = passwordinput.value;
 
-    
-    if (username && password) {
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
-        localStorage.setItem('email', email)
-        alert('Registration successful!');
-    } else {
-        alert('Please fill in all fields.');
-    }
-   
+    localStorage.setItem("username", username);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
+    alert("Registration Successful!");
 });
 });
