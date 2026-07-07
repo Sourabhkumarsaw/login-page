@@ -9,14 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
  const loginbtn = document.getElementById('loginbtn');
       
  
- registerButton.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    if (!emailinput.checkValidity()) {
-        alert("Please enter a valid email.");
-        return;
-    }
-
+ registerButton.addEventListener("click", function () {
+    
     const username = usernameinput.value.trim();
     const email = emailinput.value.trim();
     const password = passwordinput.value;
@@ -27,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     alert("Registration Successful!");
  });
- 
+
   /*
 loginbtn.addEventListener("click", function (e) {
     e.preventDefault();
